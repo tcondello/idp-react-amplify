@@ -4,7 +4,7 @@ const home_route = {
     path: '/',
     component: views.homepage,
     name: 'Home'
-}
+};
 
 const banking_route = {
     path: '/banking',

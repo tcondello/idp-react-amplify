@@ -1,5 +1,5 @@
 import React from 'react';
-import routes from "../../config/routing/homeRoutes";
+import routes from "../../config/routing/routes";
 import {BrowserRouter as Router, Link} from "react-router-dom";
 
 function Homepage(){
