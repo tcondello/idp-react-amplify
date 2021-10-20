@@ -13,7 +13,7 @@ const useCase_list = [
     }
 ]
 
-function banking() {
+function Banking() {
     return (
         <>
             <div className="bg-blue-200 py-6 flex items-center justify-center min-w-screen px-4">
@@ -31,7 +31,7 @@ function banking() {
                             </p>
                         </div>
                         <div className="flex justify-end mt-4">
-                            <a href="" className="text-xl font-medium text-indigo-500">
+                            <a href={useCase.path} className="text-xl font-medium text-indigo-500">
                                 See it in Action
                             </a>
                         </div>
@@ -43,4 +43,4 @@ function banking() {
     );
 }
 
-export default banking;
+export default Banking;

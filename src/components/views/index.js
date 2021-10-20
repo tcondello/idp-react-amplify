@@ -4,5 +4,5 @@ import insurance from "./insurance"
 import homepage from "./homepage"
 
 export default {
-    banking, healthcare, insurance, homepage
+    homepage, banking, healthcare, insurance
 }

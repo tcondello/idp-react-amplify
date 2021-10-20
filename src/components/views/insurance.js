@@ -4,17 +4,20 @@ const useCase_list = [
     {
         name: 'Claims Processing',
         description: 'Digitize, auto-review, auto-categorize documents',
-        path: '/'
+        path: '/',
+        tag: ['insurance']
     },
     {
         name: 'Invoice Processing',
         description: 'Auto-ingest the data and process invoice and receipts',
-        path: '/'
+        path: '/',
+        tag: ['insurance']
     },
     {
         name: 'Customer Onboarding',
         description: 'Auto-ingest the data and process invoice and receipts',
-        path: '/'
+        path: '/',
+        tag: ['insurance']
     }
 ]
 
