@@ -1,6 +1,9 @@
 import React from 'react';
-import routes from './config/routing/routes'
+import industries_array from "./config/industries"
+import Homepage from "./components/views/homepage";
 import Sidenav from './components/sidenav'
+import UseCaseCards from "./components/views/useCase_cards";
+
 
 import {
     BrowserRouter as Router,
@@ -14,11 +17,12 @@ function App() {
       <div className="bg-gray-100">
           <Router>
               <div className="relative min-h-screen md:flex">
-                  <Sidenav />
+                  <Sidenav routes={industries_array}/>
                   <div className="p-10 text-2xl font-bold flex-1">
                       <Switch>
-                          {routes.map((route) => (
-                              <Route key={route.path} path={route.path} component={route.component} />
+                          <Route exact path="/" render={() => <Homepage routes={industries_array}/>} />
+                          {industries_array.map((route) => (
+                              <Route key={route.path} path={route.path} render={() => <UseCaseCards name={route.name}/>} />
                           ))}
                       </Switch>
                   </div>

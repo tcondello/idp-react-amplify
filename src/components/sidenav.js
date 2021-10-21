@@ -1,8 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import routes from "../config/routing/routes";
 
-function Sidenav() {
+function Sidenav(props) {
     return (
         <>
             {/*sidebar*/}
@@ -21,7 +20,7 @@ function Sidenav() {
                 <nav>
                     <Link to="/"
                           className="block py-2.5 px-4 hover:bg-blue-700 hover:text-white rounded transition duration-200">Home</Link>
-                    {routes.filter(route => route.name !== 'Home').map(filteredRoute =>
+                    {props.routes.filter(route => route.name !== 'Home').map(filteredRoute =>
                         <Link key={filteredRoute.path} to={filteredRoute.path}
                               className="block py-2.5 px-4 hover:bg-blue-700 hover:text-white rounded transition duration-200">{filteredRoute.name}</Link>
                     )}
