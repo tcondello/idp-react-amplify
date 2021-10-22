@@ -6,11 +6,5 @@
       "lastPushTimeStamp": "2021-10-15T16:27:59.888Z"
     }
   },
-  "function": {
-    "analyzeExpense": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  }
+  "function": {}
 }

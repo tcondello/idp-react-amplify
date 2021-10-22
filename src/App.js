@@ -20,9 +20,13 @@ function App() {
                   <Sidenav routes={industries_array}/>
                   <div className="p-10 text-2xl font-bold flex-1">
                       <Switch>
-                          <Route exact path="/" render={() => <Homepage routes={industries_array}/>} />
+                          <Route exact path="/" >
+                              <Homepage routes={industries_array}/>
+                          </Route>
                           {industries_array.map((route) => (
-                              <Route key={route.path} path={route.path} render={() => <UseCaseCards name={route.name}/>} />
+                              <Route key={route.path} path={route.path}>
+                                  <UseCaseCards name={route.name}/>
+                              </Route>
                           ))}
                       </Switch>
                   </div>

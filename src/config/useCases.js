@@ -3,7 +3,7 @@ const useCase_array = [
     {
         name: 'Claims Processing',
         description: 'Digitize, auto-review, auto-categorize documents',
-        path: '/',
+        path: '/claims-processing',
         tag: ['Banking & Financial Services', 'Insurance']
     },
     {
