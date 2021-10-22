@@ -1,7 +1,13 @@
 import React from 'react';
 import useCase_array from '../../config/useCases'
+import Modal from "../modal";
 
 function UseCaseCards(props) {
+    const [show, setShow] = React.useState(false);
+
+    const handleClose = () => setShow(false)
+    const handleShow = () => setShow(true)
+
     return (
         <>
             <div className="bg-blue-200 py-6 flex items-center justify-center min-w-screen px-4">
@@ -19,14 +25,15 @@ function UseCaseCards(props) {
                             </p>
                         </div>
                         <div className="flex justify-end mt-4">
-                            <a href={filteredTag.path} className="text-xl font-medium text-indigo-500">
+                            <button onClick={handleShow} className="text-xl font-medium text-indigo-500">
                                 See it in Action
-                            </a>
+                            </button>
                         </div>
                     </div>
-
                 )}
+                <div style={{display: show ? 'block' : 'none'}} className="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20" onClick={handleClose}> Hello World</div>
             </div>
+            <Modal></Modal>
         </>
     );
 }
