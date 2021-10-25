@@ -9,7 +9,7 @@ const useCase_array = [
     {
         name: 'Invoice Processing',
         description: 'Auto-ingest the data and process invoice and receipts',
-        path: '/',
+        path: '/invoice-processing',
         tag: ['Insurance']
     },
     {
