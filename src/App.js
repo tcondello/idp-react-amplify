@@ -10,6 +10,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
+import UsecaseDetail from "./components/views/detailsCard";
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
                   <div className="p-10 text-2xl font-bold flex-1">
                       <Switch>
                           <Route exact path="/" >
-                              <Homepage routes={industries_array}/>
+                              {/*<Homepage routes={industries_array}/>*/}
+                              <UsecaseDetail></UsecaseDetail>
                           </Route>
                           {industries_array.map((route) => (
                               <Route key={route.path} path={route.path}>

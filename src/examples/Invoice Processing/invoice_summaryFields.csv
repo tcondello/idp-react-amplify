@@ -1,0 +1,18 @@
+key,value,normalized
+"","Amazon.com","VENDOR_NAME"
+"P.O. #","098ZYX7654","OTHER"
+"FOR","Some Work","OTHER"
+"Phone#","+1222-222-2222","OTHER"
+"If you have any questions concerning this invoice, contact Customer Service","+1 333-333-3333","OTHER"
+"Phone#","+1333-333-3333","OTHER"
+"Grand Total","$6231.09","TOTAL"
+"SHIP TO","The Receiver""XZY Company
+789 Another Avenue
+Different City, XYZ, USA","RECEIVER_ADDRESS"
+"DATE","01-Jan-2021","INVOICE_RECEIPT_DATE"
+"INVOICE #","123PQR456","INVOICE_RECEIPT_ID"
+"Payment Terms:","30 days","PAYMENT_TERMS"
+"Total","$6169.40","SUBTOTAL"
+"Due Date:","01/31/2021","DUE_DATE"
+"Tax","$61.69","TAX"
+"VAT ID:","12-3456789","TAX_PAYER_ID"

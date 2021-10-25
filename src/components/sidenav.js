@@ -6,7 +6,7 @@ function Sidenav(props) {
         <>
             {/*sidebar*/}
             <div
-                className={"bg-blue-800 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out"}>
+                className="bg-blue-800 text-blue-100 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out">
                 {/*logo*/}
                 <a className="text-white flex items-center space-x-2 px-2" href="/">
                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -20,9 +20,9 @@ function Sidenav(props) {
                 <nav>
                     <Link to="/"
                           className="block py-2.5 px-4 hover:bg-blue-700 hover:text-white rounded transition duration-200">Home</Link>
-                    {props.routes.filter(route => route.name !== 'Home').map(filteredRoute =>
-                        <Link key={filteredRoute.path} to={filteredRoute.path}
-                              className="block py-2.5 px-4 hover:bg-blue-700 hover:text-white rounded transition duration-200">{filteredRoute.name}</Link>
+                    {props.routes.map(routes =>
+                        <Link key={routes.path} to={routes.path}
+                              className="block py-2.5 px-4 hover:bg-blue-700 hover:text-white rounded transition duration-200">{routes.name}</Link>
                     )}
                 </nav>
             </div>
