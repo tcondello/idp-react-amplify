@@ -10,7 +10,7 @@ function Homepage(props){
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-2 gap-y-4 h-24">
                 {props.routes.map(routes =>
-                    <div key={routes.path} className="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+                    <div key={routes.path} className="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-5">
                         <div>
                             <h2 className="text-gray-800 text-3xl font-semibold">
                                 {routes.name}
