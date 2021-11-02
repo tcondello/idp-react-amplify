@@ -17,7 +17,7 @@ function Homepage(props){
                             </h2>
                         </div>
                         <div className="flex justify-end mt-4">
-                            <Link to={routes.path}
+                            <Link to={`/${routes.path}`}
                                   className="text-xl font-medium text-indigo-500">Explore Now</Link>
                         </div>
                     </div>

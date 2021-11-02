@@ -2,16 +2,12 @@ import React from 'react';
 import industries_array from "./config/industries"
 import Homepage from "./components/views/homepage";
 import Sidenav from './components/sidenav'
-import UseCaseCards from "./components/views/useCase_cards";
-
-
+import UseCaseCards from "./components/views/industry_cards";
 import {
     BrowserRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
-import UsecaseDetailHealthcare from "./components/views/usecaseDetailHealthcare";
-
 
 function App() {
   return (
@@ -25,11 +21,7 @@ function App() {
                               <Homepage routes={industries_array}/>
                               {/*<UsecaseDetailHealthcare></UsecaseDetailHealthcare>*/}
                           </Route>
-                          {industries_array.map((route) => (
-                              <Route key={route.path} path={route.path}>
-                                  <UseCaseCards name={route.name}/>
-                              </Route>
-                          ))}
+                          <Route path="/:industryUrl" children={<UseCaseCards />} />
                       </Switch>
                   </div>
               </div>

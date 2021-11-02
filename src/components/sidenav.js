@@ -21,7 +21,7 @@ function Sidenav(props) {
                     <Link to="/"
                           className="block py-2.5 px-4 hover:bg-blue-700 hover:text-white rounded transition duration-200">Home</Link>
                     {props.routes.map(routes =>
-                        <Link key={routes.path} to={routes.path}
+                        <Link key={routes.path} to={`/${routes.path}`}
                               className="block py-2.5 px-4 hover:bg-blue-700 hover:text-white rounded transition duration-200">{routes.name}</Link>
                     )}
                 </nav>

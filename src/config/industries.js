@@ -1,11 +1,11 @@
 
 const industries_array = [
     {
-        path: '/insurance',
+        path: 'insurance',
         name: 'Insurance'
     },
     {
-        path: '/healthcare',
+        path: 'healthcare',
         name: 'Healthcare'
     }
 ]
