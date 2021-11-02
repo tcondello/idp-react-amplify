@@ -10,7 +10,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import UsecaseDetail from "./components/views/detailsCard";
+import UsecaseDetailHealthcare from "./components/views/usecaseDetailHealthcare";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                       <Switch>
                           <Route exact path="/" >
                               <Homepage routes={industries_array}/>
-                              {/*<UsecaseDetail></UsecaseDetail>*/}
+                              {/*<UsecaseDetailHealthcare></UsecaseDetailHealthcare>*/}
                           </Route>
                           {industries_array.map((route) => (
                               <Route key={route.path} path={route.path}>

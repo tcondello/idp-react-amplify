@@ -1,35 +1,41 @@
-
 const useCase_array = [
     {
-        name: 'Claims Processing',
-        description: 'Digitize, auto-review, auto-categorize documents',
-        path: '/claims-processing',
-        tag: ['Banking & Financial Services', 'Insurance']
-    },
-    {
-        name: 'Invoice Processing',
-        description: 'Auto-ingest the data and process invoice and receipts',
-        path: '/invoice-processing',
+        name: 'Claims forms',
+        description: 'Claims forms Description Placeholder',
+        path: '/claims-forms',
         tag: ['Insurance']
     },
     {
-        name: 'Customer Onboarding',
-        description: 'Auto-ingest the data and process invoice and receipts',
-        path: '/',
+        name: 'Binder Documents',
+        description: 'Binder Documents Description Placeholder',
+        path: '/binder-documents',
         tag: ['Insurance']
     },
     {
-        name: 'Test Banking',
-        description: 'Banking Only Test',
-        path: '/',
-        tag: ['Banking & Financial Services']
+        name: 'Insurance Forms',
+        description: 'Insurance Forms Description Placeholder',
+        path: '/insurance-forms',
+        tag: ['Insurance']
     },
     {
-        name: 'Test Healthcare',
-        description: 'Healthcare Only Test',
-        path: '/',
+        name: 'Prescriptions',
+        description: 'Prescriptions Description Placeholder',
+        path: '/prescriptions',
         tag: ['Healthcare']
-    }
+    },
+    {
+        name: 'Medical Notes',
+        description: 'Medical Notes Description Placeholder',
+        path: '/medical-notes',
+        tag: ['Healthcare']
+    },
+    {
+        name: 'Research Journals',
+        description: 'Research Journals Description Placeholder',
+        path: '/research-journals',
+        tag: ['Healthcare']
+    },
+
 ]
 
 export default useCase_array
