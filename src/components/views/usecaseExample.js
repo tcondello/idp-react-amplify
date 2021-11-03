@@ -8,11 +8,13 @@ function UsecaseExample() {
 
     return (
         <>
-            <div className="bg-blue-100 py-6 flex items-center justify-center min-w-screen px-4">
-                <p className="text-5xl text-gray-800 capitalize">{useCaseUrl}</p>
+            <div className="bg-blue-800 flex items-center justify-center min-w-screen">
+                <p className="text-5xl text-blue-100 capitalize">{useCaseUrl}</p>
             </div>
             <div className="grid grid-cols-2 gap-x-1 gap-y-1 h-screen">
-                <div className="max-w-md py-4 px-4 bg-white rounded-lg my-5">
+                {/* START LOOOKING AT THESE CLASSES TO CHANGE THE BOXES */}
+
+                <div className="max-w py-4 px-4 bg-white rounded-lg my-5">
                     <div>
                         <h2 className="text-gray-800 text-3xl font-semibold">
                             Images
@@ -34,7 +36,7 @@ function UsecaseExample() {
                         </div>
                     </div>
                 </div>
-                <div className="max-w-md py-4 px-4 bg-white rounded-lg my-5">
+                <div className="max-w py-4 px-4 bg-white rounded-lg my-5">
                     <div>
                         <h2 className="text-gray-800 text-3xl font-semibold">
                             Output
