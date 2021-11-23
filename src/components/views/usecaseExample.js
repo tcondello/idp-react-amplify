@@ -1,36 +1,31 @@
 import React from 'react';
+import useCase_array from '../../config/useCases'
+import claims_sample from '../../examples/Medical/claims_sample.png'
 import {useParams} from "react-router-dom";
-import receipt from "../../examples/Invoice Processing/receipt.jpeg";
-import invoice from "../../examples/Invoice Processing/invoice.jpeg";
 
 function UsecaseExample() {
     let { useCaseUrl } = useParams();
+    const useCases = useCase_array.find(s => s.path === useCaseUrl)
+    if (!useCases) return null
 
     return (
         <>
             <div className="bg-blue-800 flex items-center justify-center min-w-screen">
-                <p className="text-5xl text-blue-100 capitalize">{useCaseUrl}</p>
+                <p className="text-5xl text-blue-100 capitalize">{useCases.name}</p>
             </div>
             <div className="grid grid-cols-2 gap-x-1 gap-y-1 h-screen">
-                {/* START LOOOKING AT THESE CLASSES TO CHANGE THE BOXES */}
-
                 <div className="max-w py-4 px-4 bg-white rounded-lg my-5">
                     <div>
                         <h2 className="text-gray-800 text-3xl font-semibold">
                             Images
                         </h2>
                     </div>
+                    {/* Gray Line */}
                     <div className="flex py-2 pb-2 border-t border-gray-200"/>
                     <div className="grid grid-cols-1 gap-y-1 gap-x-1 justify-items-center">
                         <div className="transform scale-75 rounded-2xl duration-200 hover:scale-95">
                             <img
-                                src={receipt}
-                                alt=""
-                            />
-                        </div>
-                        <div className="transform scale-75 rounded-2xl duration-200 hover:scale-95">
-                            <img
-                                src={invoice}
+                                src={useCases.img}
                                 alt=""
                             />
                         </div>
