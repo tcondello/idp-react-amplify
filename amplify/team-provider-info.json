@@ -17,6 +17,9 @@
           "appId": "d1kml5v35miqkp",
           "type": "cicd"
         }
+      },
+      "auth": {
+        "idpreactamplifyb2bcbd37": {}
       }
     }
   }
